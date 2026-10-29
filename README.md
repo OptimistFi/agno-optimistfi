@@ -43,7 +43,7 @@ Any model Agno supports can drive the tools. A runnable version is in [`examples
 | `get_insider_trades` | A US company's Form 4 filings from SEC EDGAR: who, role, what they did, shares and dollar value, with the trade date and the date it became public. |
 | `get_congress_trades` | US House stock disclosures under the STOCK Act, by ticker or by member, with the account each trade was made in, linked to the filing. |
 | `get_company_filings` | A company's 8-K events, earnings press releases, the text of its latest 8-Ks, or governance red flags such as late filings, auditor changes and clusters of insider selling. |
-| `get_company_calendar` | What is ahead for a company: the next earnings date projected from its own filing cadence, labeled as an estimate with its basis, and clinical trial readouts from ClinicalTrials.gov. |
+| `get_company_calendar` | What is ahead for a company: the next earnings date projected from its own filing cadence, labeled as an estimate with its basis, then clinical trial readouts from ClinicalTrials.gov, nearest first. |
 
 Every tool has an async twin (`aget_perp`, `aget_insider_trades` and so on), which Agno uses when the agent runs with `arun`.
 
