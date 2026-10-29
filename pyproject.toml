@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agno-optimistfi"
+dynamic = ["version"]
+description = "OptimistFi tools for Agno agents: perpetual futures, crypto prop firms and US company disclosures."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "OptimistFi", email = "hello@optimistfi.com" }]
+requires-python = ">=3.9"
+dependencies = ["agno>=2.3.23", "httpx>=0.24"]
+keywords = ["agno", "agents", "tools", "finance", "perpetual futures", "sec edgar", "insider trades", "congress trades"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://optimistfi.com"
+Source = "https://github.com/OptimistFi/agno-optimistfi"
+Issues = "https://github.com/OptimistFi/agno-optimistfi/issues"
+
+[project.optional-dependencies]
+test = ["pytest>=8", "pytest-asyncio>=0.23"]
+
+[tool.hatch.version]
+path = "src/agno_optimistfi/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "examples", "README.md", "LICENSE"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
