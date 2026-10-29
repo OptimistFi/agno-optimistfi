@@ -80,7 +80,7 @@ Each tool returns JSON. Records share one shape:
 ```
 
 - `event_time` is when the event happened or is expected.
-- `as_of` is when it became public.
+- `as_of` is when it became public, or for a projected date or a trial readout, when its source was last read.
 - `confidence` is `confirmed` for a filed fact and `estimated` for a projected date, such as a next earnings date, which also carries its basis.
 - `source.url` links to the filing or page the record was read from.
 
