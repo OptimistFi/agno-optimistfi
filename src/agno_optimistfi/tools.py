@@ -125,7 +125,7 @@ class OptimistFiTools(Toolkit):
     # The endpoint speaks MCP's streamable HTTP transport: a JSON-RPC request in, the reply as a server-sent event.
     _HEADERS = {"Content-Type": "application/json", "Accept": "application/json, text/event-stream"}
     # A gateway status is what the server sends while it restarts; one retry rides out a short gap.
-    _GATEWAY = {502, 503, 504}
+    _GATEWAY = frozenset({502, 503, 504})
     _RETRY_SECONDS = 5.0
 
     @staticmethod
