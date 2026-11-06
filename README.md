@@ -2,6 +2,8 @@
 
 [OptimistFi](https://optimistfi.com) data as tools for [Agno](https://github.com/agno-agi/agno) agents: perpetual futures across venues, prop firms that fund crypto and stock perps traders, and US company disclosures from SEC EDGAR and the US House Clerk.
 
+**The same data on optimistfi.com:** [perps markets](https://optimistfi.com/perps/markets) · [perps news](https://optimistfi.com/perps/news) · [prop firms](https://optimistfi.com/perps/props) · [prop rule changes](https://optimistfi.com/perps/props/changes) · [stock theses](https://optimistfi.com/stocks) · [insider buying](https://optimistfi.com/insider-buying) · [House members' trades](https://optimistfi.com/congress)
+
 The tools call OptimistFi's public endpoint, `https://mcp.optimistfi.com/mcp`. No API key is needed.
 
 ## Install
